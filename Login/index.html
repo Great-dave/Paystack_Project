@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Paystack Dashboard</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <!-- <header class="header-logo"> -->
+  <div class="content"><img src="https://dashboard.paystack.com/assets/img/logo.svg" alt="Paysatck-logo">
+    <!-- </header> -->
+
+    <div class="container">
+      <h1 class="label">Login</h1>
+      <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+        <div class="font"></div>
+        <input autocomplete="off" class="userEmail" type="text" name="email" required placeholder="Email Address">
+        <div id="email_error">Please fill up your Email or Phone</div>
+        <div class="font2"></div>
+        <input clas="userPassword" type="password" name="password" required placeholder="Password">
+        <div id="password_error">Please fill up a password</div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div class="signup-link">
+      <div class="ng-binding">New to Paystack? <a href="/Sign-up/index.html">Sign up</a>
+      </div>
+      <div><a href="#/request-password-reset">Forgot your
+          password?</a></div>
+    </div>
+  </div>
+
+  <button type="submit" class="support-button"><a href="/homepage/index.html">Support</a></button>
+
+  <script src="login.js" async defer></script>
+</body>
+
+</html>
