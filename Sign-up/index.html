@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+  <header>
+    <div><img src="https://dashboard.paystack.com/assets/img/logo.svg" alt="Paysatck-logo"></div>
+  </header>
+
+  <div class="container">
+    <h1 class="label">CREATE YOUR ACCOUNT</h1>
+    <form class="signup_form" action="" method="post" name="form" onsubmit="return validated()">
+      <div class="nav-form">
+        Country
+        <a href="/homepage/index.html">Other Countries</a>
+      </div>
+      <div>
+        <select name="countries" id="" class="">
+          <option value="">Nigeria</option>
+          <option value="" disabled>Select Country</option>
+          <option value="">Ghana</option>
+          <option value="">South Africa</option>
+        </select>
+      </div>
+      <div class="mb-3 form_group">
+        <label for="formGroupExampleInput" class="formlabel">
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Business Name">
+        </label>
+      </div>
+      <div class="mb-3 form_group">
+        <label for="formGroupExampleInput" class="formlabel">
+          <div><input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name"></div>
+        </label>
+      </div>
+      <div class="mb-3 form_group">
+        <label for="formGroupExampleInput" class="formlabel">
+          <div><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last Name"></div>
+        </label>
+      </div>
+      <div class="mb-3 form_group">
+        <label for="formGroupExampleInput" class="formlabel">
+          <div><input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email Address"></div>
+        </label>
+      </div>
+      <div class="mb-3 form_group">
+        <label for="formGroupExampleInput" class="formlabel">
+          <div><input type="password" class="form-control" id="formGroupExampleInput" placeholder="Password">
+            <label for=""><i class="far fa-eye-slash"></i></label></div>
+        </label>
+      </div>
+      <div>
+        <label for="formGroupExampleInput" class="form-label">Are you a software developer?
+          <div class="radio">
+            <label for="">
+              <input type="radio" class="radioInput" id="formGroupExampleInput">
+              Yes, I am
+            </label>
+            <label for="">
+              <input type="radio" class="radioInput" id="formGroupExampleInput">
+              No, I'm not
+            </label>
+          </div>
+        </label>
+      </div>
+
+      <div class="mb-3 form_group">
+
+
+        <div class="create-button">
+          <button class="btn btn-success create-button" type="submit">
+            Create my Account
+          </button>
+        </div>
+        <div class="wrapper text-center m-t-sm text-sm">
+          By clicking the "Create My Account" button, you agree to Paystack's <a href="#">terms of acceptability use</a>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+  <footer>
+    <div class="login-option text-center m-b-lg">Already have an account? <a href="login.html" class="login-option"
+        target="_blank">Login</a>
+    </div>
+  </footer>
+
+
+  <button type="button" class="btn btn-secondary help-button" data-bs-container="body" data-bs-toggle="popover"
+    data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    <span><i class="far fa-question-circle"></i></span> Help
+  </button>
+</body>
+
+</html>
